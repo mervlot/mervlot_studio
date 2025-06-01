@@ -1,4 +1,4 @@
-import{j as e}from"./index-vKWjDMaW.js";/* empty css              */function l(){return e.jsx("div",{id:"hs-application-sidebar",className:`hs-overlay [--auto-close:lg] \r
+import{j as e}from"./index-zps3FEx8.js";/* empty css              */function l(){return e.jsx("div",{id:"hs-application-sidebar",className:`hs-overlay [--auto-close:lg] \r
     hs-overlay-open:translate-x-0 \r
     -translate-x-full transition-all duration-300 transform \r
     w-65 h-full \r

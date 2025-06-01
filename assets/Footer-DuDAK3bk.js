@@ -1,4 +1,4 @@
-import{j as e,N as t}from"./index-vKWjDMaW.js";/* empty css              */import{m as o}from"./proxy-08qRjFmM.js";function c(){return e.jsxs(o.nav,{className:`\r
+import{j as e,N as t}from"./index-zps3FEx8.js";/* empty css              */import{m as o}from"./proxy-DuCdUaV_.js";function c(){return e.jsxs(o.nav,{className:`\r
         md:hidden\r
         fixed \r
         bottom-0\r

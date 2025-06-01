@@ -1,2 +1,0 @@
-import{j as t}from"./index-vKWjDMaW.js";import{m as e}from"./proxy-08qRjFmM.js";const n=()=>t.jsx("div",{className:" justify-self-center mt-[40vw]",children:t.jsx(e.button,{className:"px-6 py-2 rounded-md relative radial-gradient",initial:{"--x":"100%"},animate:{"--x":"-100%"},transition:{repeat:1/0,repeatType:"loop"},children:t.jsx("span",{className:`text-neutral-100\r
-                tracking-wide font-light h-full w-full block relative linear-mask`,children:"Start now"})})});export{n as default};
