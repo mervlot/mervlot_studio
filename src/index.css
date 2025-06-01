@@ -1,0 +1,381 @@
+@import "tailwindcss";
+@import "../node_modules/preline/variants.css";
+[data-theme="dark"] {
+    --scrollbar-track: #161616;
+    --bg: white;
+
+}
+[data-theme="light"] {
+    --scrollbar-track: #c0b6b6;
+    --bg: black;
+    
+}
+::-webkit-scrollbar {
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--bg);
+    border-radius: 10px;
+    border: 2px solid var(--scrollbar-track) ;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--scrollbar-track);
+    border-radius: 10px;
+
+}
+* {
+    outline: none;
+}
+
+body {
+    font-family: 'poppins'
+}
+
+/* latin-ext */
+/* latin-ext */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@font-face {
+    font-family: 'fredoka-bold';
+    src: url('assets/fonts/Fredoka-Bold.ttf') format('truetype');
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: 'fredoka';
+    src: url('assets/fonts/Fredoka-Regular.ttf') format('truetype');
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'fredoka-light';
+    src: url('assets/fonts/Fredoka-Light.ttf') format('truetype');
+    font-weight: lighter;
+
+}
+
+@font-face {
+    font-family: 'fredoka-medium';
+    src: url('assets/fonts/Fredoka-Medium.ttf') format('truetype');
+    font-weight: medium;
+
+}
+
+@font-face {
+    font-family: 'fredoka-semibold';
+    src: url('assets/fonts/Fredoka-SemiBold.ttf') format('truetype');
+    font-weight: semibold;
+
+}
+
+@font-face {
+    font-family: 'popins-bold';
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: 'popins';
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: 'popins-light';
+    src: url('assets/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: lighter;
+
+}
+
+@font-face {
+    font-family: 'popins-medium';
+    src: url('assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: medium;
+
+}
+
+@font-face {
+    font-family: 'popins-semibold';
+    src: url('assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: semibold;
+
+}
+
+@font-face {
+    font-family: 'popins-extrabold';
+    src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: extrabold;
+
+}
+
+@font-face {
+    font-family: 'popins-black';
+    src: url('assets/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: black;
+
+}
+
+@font-face {
+    font-family: 'popins-extralight';
+    src: url('assets/fonts/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: extralight;
+
+}
+
+@font-face {
+    font-family: 'popins-thin';
+    src: url('assets/fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: thin;
+
+}
+
+@font-face {
+    font-family: 'popins-semibolditalic';
+    src: url('assets/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight: semibold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-italic';
+    src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-bolditalic';
+    src: url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-lightitalic';
+    src: url('assets/fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'popins-mediumitalic';
+    src: url('assets/fonts/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: medium;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-extrabolditalic';
+    src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: extrabold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-blackitalic';
+    src: url('assets/fonts/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: black;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-extralightitalic';
+    src: url('assets/fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-weight: extralight;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-thinitalic';
+    src: url('assets/fonts/Poppins-ThinItalic.ttf') format('truetype');
+    font-weight: thin;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-semibolditalic';
+    src: url('assets/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight: semibold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-italic';
+    src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-bolditalic';
+    src: url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'popins-lightitalic';
+    src: url('assets/fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/font/rP2Fp2ywxg089UriCZa4ET-DNl0.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/font/rP2Fp2ywxg089UriCZa4Hz-D.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/font/rP2Hp2ywxg089UriCZ2IHSeH.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url(assets/font/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+@theme {
+    --color-primary: #030014;
+
+    --color-light-100: #cecefb;
+    --color-light-200: #a8b5db;
+
+    --color-gray-100: #9ca4ab;
+
+    --color-dark-100: #0f0d23;
+
+    --font-dm-sans: DM Sans, sans-serif;
+
+    --breakpoint-xs: 480px;
+
+    --background-image-hero-pattern: url("/hero-bg.png");
+}
+
+
+
+@keyframes fluxingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #410579, #06a5ee, rgb(2, 27, 248));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: fluxingGradient 5s ease infinite;
+}
+
+@utility fancy-text {
+    -webkit-text-stroke: 5px rgba(206, 206, 251, 0.5);
+    font-size: 190px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@utility logo-m {
+    font-family: "fredoka-bold", sans-serif;
+}
+
+@utility hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.shadow-md-top {
+    box-shadow: 0 -4px 11px rgba(0, 0, 0, 0.1);
+}
+
+.radial-gradient {
+    background: radial-gradient(circle at 50% 0%,
+            rgba(250, 250, 250, 0.05) 0%,
+            transparent 60%), rgba(15, 15, 15, 1);
+}
+
+.linear-mask {
+    mask-image: linear-gradient(-75deg,
+            white (var(--x) + 20%),
+            transparent 30%,
+            white 100%);
+    -webkit-mask-image: linear-gradient(-75deg,
+            white (var(--x) + 20%),
+            transparent 30%,
+            white 100%)
+}

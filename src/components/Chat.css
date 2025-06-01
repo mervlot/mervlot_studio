@@ -1,0 +1,14 @@
+.card{padding:2em}.read-the-docs{color:#888}
+.chat-container{max-width:600px;margin:auto;padding:1rem;border-radius:10px;background-color:#333}
+.chat-list{list-style:none;padding:0;max-height:300px;overflow-y:auto}
+.chat-list li{background:#1a1a1a;margin:5px 0;padding:10px;border-radius:5px;text-align:left}
+.chat-input{width:100%;padding:8px;margin-top:10px}
+.chat-button{background-color:#646cff;color:#fff;border:none;padding:8px 12px;margin-top:5px;cursor:pointer;border-radius:5px}
+.chat-button:hover{background-color:#535bf2}
+
+.head{
+    
+}
+.mainChat{
+    color: whitesmoke;
+}
