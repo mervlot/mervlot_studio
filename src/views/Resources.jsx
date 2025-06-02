@@ -8,7 +8,7 @@ const categories = [
     {
         name: "Muhammmad",
         desc: "the founder of mervlotStudio",
-        src: "/img/Alert.jpeg",
+        src: "/mervlot_studio/img/Alert.jpeg",
     },
 ];
 
@@ -32,7 +32,7 @@ function Resources() {
                 <Navbar />
                 <Footer />
                 <div className="w-[40%] h-screen justify-self-center px-4 py-4 mb-5">
-    
+
                 </div>
 
 
@@ -41,7 +41,7 @@ function Resources() {
     );
 }
 
-export default Resources; 
+export default Resources;
 
 
 

@@ -8,7 +8,7 @@ const categories = [
     {
         name: "Muhammmad",
         desc: "the founder of mervlotStudio",
-        src: "/img/Alert.jpeg",
+        src: "/mervlot_studio/img/Alert.jpeg",
     },
 ];
 
@@ -42,7 +42,7 @@ function Creators() {
                                     src="https://images.unsplash.c`om/photo-1448932133140-b4045783ed9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
                                 />
                             </div>
-                            
+
                             <div className="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
                                 <img
                                     className="object-cover w-full h-full"

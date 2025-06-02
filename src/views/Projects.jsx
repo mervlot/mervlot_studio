@@ -8,7 +8,7 @@ const categories = [
     {
         name: "Muhammmad",
         desc: "the founder of mervlotStudio",
-        src: "/img/Alert.jpeg",
+        src: "/mervlot_studio/img/Alert.jpeg",
     },
 ];
 
@@ -41,7 +41,7 @@ function Projects() {
     );
 }
 
-export default Projects; 
+export default Projects;
 
 
 
