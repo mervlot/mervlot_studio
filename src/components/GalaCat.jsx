@@ -1,12 +1,11 @@
-/* eslint-disable no-unused-vars */
 import { LiveProvider, LivePreview, LiveError } from 'react-live';
 import { motion } from 'framer-motion';
 import Loader from './Loader';
 
-const GalaCat = ({ data, loading, error }) => {
+const GalaCat = ({ data, loading, error, empty }) => {
     if (loading) return <Loader />;
     if (error) return <div><h1 className='text-5xl'>:( <span >Sorry: {error}</span></h1></div>;
-
+    if (empty) return <h1>Nothing found</h1>
     return (
         <div className="px-4 py-6 select-text">
             {data.map((cont, idx) => (
