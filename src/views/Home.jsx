@@ -45,6 +45,7 @@ function MainHome() {
         return () => {
             // Optional cleanup if you use AbortController 
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [page, btnSearch]);
     return (
         <div className="dark:bg-black select-none top-0 bg-gray-50 dark:text-gray-50 text-black overflow-hidden">
