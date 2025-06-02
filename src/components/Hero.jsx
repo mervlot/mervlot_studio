@@ -27,7 +27,7 @@ const HeroSection = () => {
                 >
                     Explore cutting-edge components and templates for your next-gen projects.
                 </motion.p>
-                <motion.a href="/#/home" className=" cursor-pointer"
+                <motion.a href="/mervlot_studio/#/home" className=" cursor-pointer"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1.2 }}>
