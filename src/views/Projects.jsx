@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Sidebar from "../components/Sidebar"
 import { motion } from 'motion/react';
+import "../assets/bootstrap-icons-1.11.3/font/bootstrap-icons.css"
+
 const categories = [
     {
         name: "Muhammmad",

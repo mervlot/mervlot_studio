@@ -4,11 +4,11 @@ const Navbar = lazy(() => import("./components/Navbar"));
 const Card = lazy(() => import("./components/Card"));
 const Footer = lazy(() => import("./components/Footer"));
 import { motion } from "motion/react"
-import Particles from "./components/Particles";
+import "./assets/bootstrap-icons-1.11.3/font/bootstrap-icons.css"
+
 
 const HeroSection = lazy(() => import("./components/Hero"))
 const Waves = lazy(() => import("./components/Wave"));
-const Anim = lazy(() => import("./components/Anim"));
 const Line = lazy(() => import("./components/line"));
 const LBanner = lazy(() => import("./components/LBanner"));
 const RBanner = lazy(() => import("./components/RBanner"));

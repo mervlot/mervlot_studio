@@ -2,6 +2,7 @@
 import React, { lazy, Suspense, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "motion/react";
+import "../assets/bootstrap-icons-1.11.3/font/bootstrap-icons.css"
 
 // Lazy-loaded components 
 const Navbar = lazy(() => import("../components/Navbar"));

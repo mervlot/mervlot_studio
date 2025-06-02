@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect } from "react"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import Sidebar from "../components/Sidebar"
-import SidebarR from "../components/SidebarR"
-import Gala from "../components/flowbite/Gala"
-import GalaCat from "../components/GalaCat"
+import React, { lazy, Suspense, useState, useEffect } from "react";
+const Navbar = lazy(() => import("../components/Navbar"));
+const Footer = lazy(() => import("../components/Footer"));
+const Sidebar = lazy(() => import("../components/Sidebar"));
+const GalaCat = lazy(() => import("../components/GalaCat"))
+
+import "../assets/bootstrap-icons-1.11.3/font/bootstrap-icons.css"
+
 import { motion } from 'motion/react';
 function MainHome() {
     const [searchTerm, setSearchTerm] = useState("")
@@ -30,8 +31,8 @@ function MainHome() {
                 let info = await response.json();
                 let result = info.results
                 setContent(result);
-                if (result == false)  setEmpty(true) 
-              
+                if (result == false) setEmpty(true)
+
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -47,30 +48,33 @@ function MainHome() {
     }, [page, btnSearch]);
     return (
         <div className="dark:bg-black select-none top-0 bg-gray-50 dark:text-gray-50 text-black overflow-hidden">
-            <Sidebar />
+            <Suspense> <Sidebar /></Suspense>
+
 
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
                 className="w-full  pt-10 px-4 sm:px-6 md:px-20 lg:ps-50">
-                <Navbar />
-                <Footer />
+                <Suspense><Navbar /> </Suspense>
+                <Suspense>
+                    <Footer /></Suspense>
                 <div className="">
                     <div className="rounded-xl border mt-9 border-blue-500 pl-2 ">
                         <button className="bi-search cursor-pointer" onClick={() => setBtnSearch(!btnSearch)} />
                         <input
                             className="pl-3 w-[95%]"
                             type="text"
-                            placeholder="Search through thousands of movies"
+                            placeholder="Search through our components"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
                     </div>
-                    
+
                 </div>
                 <div className="mt-10">
-                    <GalaCat data={content} loading={loading} error={error} empty={empty} />
+                    <Suspense> <GalaCat data={content} loading={loading} error={error} empty={empty} /></Suspense>
+
                 </div>
 
             </motion.div>
