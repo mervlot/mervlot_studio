@@ -23,7 +23,7 @@ function MainHome() {
             setLoading(true);
             setError(null);
             try {
-                const url = `http://192.168.56.1:3000/search?page=${page}&q=${searchTerm}&category=${category}  `;
+                const url = `https://backy-8hn9.onrender.com/search?page=${page}&q=${searchTerm}&category=${category}  `;
                 console.log(url)
                 setEmpty(false)
                 const response = await fetch(url);
@@ -32,6 +32,7 @@ function MainHome() {
                 let result = info.results
                 setContent(result);
                 if (result == false) setEmpty(true)
+
 
             } catch (err) {
                 setError(err.message);
@@ -45,7 +46,7 @@ function MainHome() {
         return () => {
             // Optional cleanup if you use AbortController 
         };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [page, btnSearch]);
     return (
         <div className="dark:bg-black select-none top-0 bg-gray-50 dark:text-gray-50 text-black overflow-hidden">
@@ -69,6 +70,9 @@ function MainHome() {
                             placeholder="Search through our components"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter") setBtnSearch(!btnSearch);
+                            }}
                         />
                     </div>
 

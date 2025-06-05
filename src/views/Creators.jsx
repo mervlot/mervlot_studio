@@ -6,11 +6,11 @@ import Sidebar from "../components/Sidebar"
 import { motion } from 'motion/react';
 import "../assets/bootstrap-icons-1.11.3/font/bootstrap-icons.css"
 
-const categories = [
+const creators = [
     {
         name: "Muhammmad",
         desc: "the founder of mervlotStudio",
-        src: "/mervlot_studio/img/Alert.jpeg",
+        src: "/mervlot_studio/img/mervlot.png",
     },
 ];
 
@@ -34,20 +34,20 @@ function Creators() {
                 <Navbar />
                 <Footer />
                 <div className="w-[40%] h-screen justify-self-center px-4 py-4 mb-5">
-                    {categories.map((cat, idx) => (
+                    {creators.map((cat, idx) => (
 
 
                         <div key={idx} className="bg-white dark:bg-dark-100 my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto">
-                            <div className="relative h-40">
-                                <img
-                                    className="absolute h-full w-full object-cover" draggable={false}
-                                    src="https://images.unsplash.c`om/photo-1448932133140-b4045783ed9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                            <div className="relative  h-40">
+                                <div
+                                    className="absolute h-full  outline-none  border-2 border-gray-50 dark:border-gray-100 dark:mx-1 w-full  dark:my-1 dark:w-[98%] dark:rounded-t-lg object-cover" draggable={false}
+                                   
                                 />
                             </div>
 
-                            <div className="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
+                            <div className="relative shadow mx-auto h-24 w-24 -my-12 bg-inherit border-white rounded-full overflow-hidden border-4">
                                 <img
-                                    className="object-cover w-full h-full"
+                                    className="justify-self-center  w-full px-3 py-3 h-full"
                                     draggable={false}
                                     src={cat.src}
                                 />
@@ -55,7 +55,7 @@ function Creators() {
                             <div className="mt-16">
                                 <h1 className="text-lg text-center font-semibold">{cat.name}</h1>
                                 <p className="text-sm text-gray-600 text-center">
-                                    13 connections in common
+                                    Let Code Together As One
                                 </p>
                             </div>
 
