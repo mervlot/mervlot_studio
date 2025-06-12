@@ -30,9 +30,9 @@ function Home() {
     if (theme == "dark") {
       setDark(true)
     }
-  
+
   }, [theme])
-  
+
 
 
   const items = [
@@ -53,13 +53,13 @@ function Home() {
   ];
 
   return (
-    
-    <div className=" w-full dark:bg-black bg-gray-50 overflow-x-hidden">
-    
-        
-        <HeroSection />
 
-        {/* <Particles
+    <div className=" w-full dark:bg-black bg-gray-50 overflow-x-hidden">
+
+
+      <HeroSection />
+
+      {/* <Particles
           particleColors={['#ffffff', '#ffffff']}
           particleCount={200}
           particleSpread={10}
@@ -69,23 +69,23 @@ function Home() {
           alphaParticles={false}
           disableRotation={false}
         /> */}
-      
-        <Suspense>
-          <Waves
+
+      <Suspense>
+        <Waves
           lineColor="#0cc5f3"
-            backgroundColor="#000"
-            waveSpeedX={0.02}
-            waveSpeedY={0.01}
-            waveAmpX={40}
-            waveAmpY={20}
-            friction={0.9}
-            tension={0.01}
-            maxCursorMove={120}
-            xGap={12}
-            yGap={36}
-          />
-        </Suspense>
-       
+          backgroundColor="#000"
+          waveSpeedX={0.02}
+          waveSpeedY={0.01}
+          waveAmpX={40}
+          waveAmpY={20}
+          friction={0.9}
+          tension={0.01}
+          maxCursorMove={120}
+          xGap={12}
+          yGap={36}
+        />
+      </Suspense>
+
       {/* 
       /* <motion.div
           className="absolute w-[10rem] h-[10rem] bg-purple-800 rounded-full blur-3xl opacity-20"
@@ -95,10 +95,8 @@ function Home() {
         /> */}
 
 
+      <div className="mt-10"><Line /></div>
 
-
-
-      <Line />
 
       <LBanner />
       <RBanner />
