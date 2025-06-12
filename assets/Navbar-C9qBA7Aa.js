@@ -1,4 +1,4 @@
-import{j as r}from"./index-CLVqKR9a.js";/* empty css              */import{m as n}from"./proxy-D9GyCe_Y.js";function o(){return r.jsx(n.nav,{className:`\r
+import{j as r}from"./index-DIU9xJtM.js";/* empty css              */import{m as n}from"./proxy-Dn4fPxPQ.js";function o(){return r.jsx(n.nav,{className:`\r
   \r
    \r
    justify-center\r

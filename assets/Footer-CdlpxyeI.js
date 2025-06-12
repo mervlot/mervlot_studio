@@ -1,4 +1,4 @@
-import{j as e}from"./index-CLVqKR9a.js";/* empty css              */import{m as o}from"./proxy-D9GyCe_Y.js";import{N as t}from"./App-BD_3Z3kJ.js";function a(){return e.jsxs(o.nav,{className:`\r
+import{j as e}from"./index-DIU9xJtM.js";/* empty css              */import{m as o}from"./proxy-Dn4fPxPQ.js";import{N as t}from"./App-C5h66khy.js";function a(){return e.jsxs(o.nav,{className:`\r
         md:hidden\r
         fixed \r
         bottom-0\r
